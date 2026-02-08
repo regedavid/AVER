@@ -1,0 +1,24 @@
+name: aver
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10                # Stable version for ML libraries
+  - pandas                     # Dataframes
+  - numpy                      # Numerical operations
+  - matplotlib                 # Plotting graphs/spectrograms
+  - seaborn                    # Nicer confusion matrices
+  - scikit-learn               # Splitting data and calculating accuracy
+  - jupyter                    # For running  Notebooks
+  - tqdm                       # Progress bars (essential for long loops)
+  - pip                        # Pip package manager
+  - ffmpeg                     # For video processing (if needed)
+  - pip:
+    - opencv-python            # Standard video processing library
+    - librosa                  # The gold standard for audio analysis
+    - soundfile                # Backend often required by librosa
+    - torch                    # Deep Learning framework
+    - torchvision              # Computer Vision tools for PyTorch
+    - torchaudio               # Audio tools for PyTorch
+    - torchcodec               # For efficient video loading in PyTorch
